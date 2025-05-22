@@ -1,0 +1,46 @@
+# Funções das operações
+def soma(a, b):
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Erro: Divisão por zero!"
+
+# Programa principal
+print("Calculadora Simples")
+print("Selecione a operação:")
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+# Entrada da operação
+operacao = input("Digite o número da operação desejada: ")
+
+# Entrada dos números
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Verifica qual operação foi escolhida
+if operacao == '1':
+    resultado = soma(num1, num2)
+    print(f"Resultado: {resultado}")
+elif operacao == '2':
+    resultado = subtracao(num1, num2)
+    print(f"Resultado: {resultado}")
+elif operacao == '3':
+    resultado = multiplicacao(num1, num2)
+    print(f"Resultado: {resultado}")
+elif operacao == '4':
+    resultado = divisao(num1, num2)
+    print(f"Resultado: {resultado}")
+else:
+    print("Operação inválida!")
