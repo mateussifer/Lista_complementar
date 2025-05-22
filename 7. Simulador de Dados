@@ -1,0 +1,12 @@
+import random
+
+# Função para simular o lançamento de um dado
+def lançar_dado():
+    return random.randint(1, 6)
+
+# Programa principal
+print("Simulador de Dados")
+
+resultado = lançar_dado()
+
+print(f"Você lançou o dado e saiu: {resultado}")
