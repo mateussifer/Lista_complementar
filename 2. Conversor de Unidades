@@ -1,0 +1,37 @@
+# Função para converter quilômetros em milhas
+def km_para_milhas(km):
+    return km * 0.621371
+
+# Função para converter metros em centímetros
+def m_para_cm(m):
+    return m * 100
+
+# Função para converter litros em mililitros
+def l_para_ml(l):
+    return l * 1000
+
+# Programa principal
+print("Conversor de Unidades")
+print("Escolha uma conversão:")
+print("1 - Quilômetros para Milhas")
+print("2 - Metros para Centímetros")
+print("3 - Litros para Mililitros")
+
+# Entrada da opção
+opcao = input("Digite o número da conversão desejada: ")
+
+# Verifica a opção e realiza a conversão
+if opcao == '1':
+    km = float(input("Digite o valor em quilômetros: "))
+    milhas = km_para_milhas(km)
+    print(f"{km} km equivalem a {milhas:.2f} milhas.")
+elif opcao == '2':
+    m = float(input("Digite o valor em metros: "))
+    cm = m_para_cm(m)
+    print(f"{m} metros equivalem a {cm:.2f} centímetros.")
+elif opcao == '3':
+    l = float(input("Digite o valor em litros: "))
+    ml = l_para_ml(l)
+    print(f"{l} litros equivalem a {ml:.2f} mililitros.")
+else:
+    print("Opção inválida!")
