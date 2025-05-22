@@ -1,0 +1,11 @@
+# Função para contar caracteres sem espaço
+def contar_caracteres(frase):
+    frase_sem_espacos = frase.replace(" ", "")
+    return len(frase_sem_espacos)
+
+# Programa principal
+frase = input("Digite uma frase: ")
+
+quantidade = contar_caracteres(frase)
+
+print(f"A frase possui {quantidade} caracteres (sem contar os espaços).")
